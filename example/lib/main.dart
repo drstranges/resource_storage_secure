@@ -60,12 +60,12 @@ class _DemoPageState extends State<DemoPage> {
     _storage1 = FlutterSecureResourceStorage<String, Value>(
       storageName: 'value_1',
       decode: Value.fromJson,
-      logger: const Logger(),
+      logger: const ResourceLogger(),
     );
     _storage2 = FlutterSecureResourceStorage<String, Value>(
       storageName: 'value_2',
       decode: Value.fromJson,
-      logger: const Logger(),
+      logger: const ResourceLogger(),
     );
     _refreshCounter1();
     _refreshCounter2();

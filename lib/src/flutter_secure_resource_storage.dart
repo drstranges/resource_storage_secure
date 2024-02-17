@@ -21,7 +21,7 @@ class FlutterSecureResourceStorageProvider implements ResourceStorageProvider {
     StorageDecoder<V>? decode,
     StorageExecutor? executor,
     TimestampProvider? timestampProvider,
-    Logger? logger,
+    ResourceLogger? logger,
   }) {
     return FlutterSecureResourceStorage(
       storageName: storageName,
@@ -84,7 +84,7 @@ class FlutterSecureResourceStorage<K, V> implements ResourceStorage<K, V> {
         resetOnError: true,
       ),
     ),
-    Logger? logger,
+    ResourceLogger? logger,
   })  : _logger = logger,
         _timestampProvider = timestampProvider,
         _storage = storage,
@@ -97,7 +97,7 @@ class FlutterSecureResourceStorage<K, V> implements ResourceStorage<K, V> {
   final String storageName;
   final JsonStorageAdapter<V> _storageAdapter;
   final FlutterSecureStorage _storage;
-  final Logger? _logger;
+  final ResourceLogger? _logger;
 
   /// Set custom timestamp provider if you need it in tests
   final TimestampProvider _timestampProvider;

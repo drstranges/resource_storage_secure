@@ -1,6 +1,6 @@
 name: resource_storage_secure
 description: "Secure persistent resource storage implementation based on flutter_secure_storage plugin."
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/drstranges/resource_storage_secure
 repository: https://github.com/drstranges/resource_storage_secure
 issue_tracker: https://github.com/drstranges/resource_storage_secure/issues
@@ -14,7 +14,7 @@ environment:
 
 dependencies:
   flutter_secure_storage: ">=9.0.0 <10.0.0"
-  resource_storage: ">=1.0.0 <2.0.0"
+  resource_storage: ">=1.0.2 <2.0.0"
 
 dev_dependencies:
   flutter_test:

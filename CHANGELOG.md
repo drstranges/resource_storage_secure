@@ -3,3 +3,6 @@
 
 ## 1.0.1
 * Set lover Dart sdk requirements
+* 
+## 1.0.2
+* Upgrade resource_storage version to 1.0.2
